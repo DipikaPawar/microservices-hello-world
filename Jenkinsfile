@@ -19,7 +19,6 @@ pipeline {
             steps {
                 // Run Maven build (if using Maven)
                 echo 'Building the application...'
-                cd helloworld_service
                 sh 'mvn clean install'
             }
         }
